@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.lang.reflect.Array;
 
 public class Main {
     public static void main(String[] args) {
@@ -42,5 +46,28 @@ public class Main {
         b) dokończyć implementację metod z interfejsów,
         c) stworzyć pola w metodzie main() i wywołać metody
         */
+        Student student1 = new Student();
+        student1.setIndeks("60726");
+
+        Student student2 = new Student();
+        student2.setIndeks("62354");
+
+        Pracownik pracownik1 = new Pracownik();
+        pracownik1.setFirma("MaxBud");
+
+        Pracownik pracownik2 = new Pracownik();
+        pracownik2.setFirma("Termomal");
+
+
+        List<Pracownik> Lista = new ArrayList(){};
+        Lista.add(pracownik2);
+        Lista.add(pracownik1);
+        List<Student> Lista1 = new ArrayList<>(){};
+        Lista1.add(student1);
+        Lista1.add(student2);
+        System.out.println(Lista);
+        System.out.println(Lista1);
+
+
     }
 }
