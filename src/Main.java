@@ -13,6 +13,12 @@ public class Main {
         b) zaimplementować metody abstrakcyjne odpowiednimi wzorami,
         c) stworzyć objekty tych klas i wyświetlić przykładowe wyliczenia
         */
+        Prostokat prostokat1 = new Prostokat(7, 6);
+        Kwadrat kwadrat1 = new Kwadrat(9);
+        System.out.println(prostokat1.obwod());
+        System.out.println(prostokat1.pole());
+        System.out.println(kwadrat1.obwod());
+        System.out.println(kwadrat1.pole());
 
     }
 }
